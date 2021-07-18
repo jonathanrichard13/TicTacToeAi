@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="first-message">
+        <div>Please select player 1 or 2</div>
+        <input type="radio" name="player" value="1" id="player1" checked>
+        <label for="player1" class="player-label">Player 1</label>
+        <input type="radio" name="player" value="2" id="player2">
+        <label for="player2" class="player-label">Player 2</label>
+        <input type="submit" onclick="start()" class="submit">
+    </div>
+
+    <div class="tic-tac-toe-container x-turn show">
+        <div class="cell" id='0' cell></div>
+        <div class="cell" id='1' cell></div>
+        <div class="cell" id='2' cell></div>
+        <div class="cell" id='3' cell></div>
+        <div class="cell" id='4' cell></div>
+        <div class="cell" id='5' cell></div>
+        <div class="cell" id='6' cell></div>
+        <div class="cell" id='7' cell></div>
+        <div class="cell" id='8' cell></div>
+    </div>
+
+    <div class="last-message">
+        <div class="result"></div>
+        <div class="result">Please restart the page to play again</div>
+    </div>
+</body>
+</html>
